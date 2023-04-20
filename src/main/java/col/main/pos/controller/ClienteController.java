@@ -18,7 +18,6 @@ public class ClienteController {
     private ClienteService cs;
     @GetMapping("/listar")
     public ResponseEntity<List<Cliente>> listar(){
-
         return new ResponseEntity<>(cs.listarTodos(), HttpStatus.OK);
     }
 
